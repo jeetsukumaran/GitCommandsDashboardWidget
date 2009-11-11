@@ -27,25 +27,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>97c776307aaab041</string>
+		<string>deb0f19b04abb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojeTdNCG/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojIiliKq/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>3</integer>
+		<integer>1</integer>
 		<key>percent-x</key>
-		<real>0.38869047164916992</real>
+		<real>0.3363095223903656</real>
 		<key>percent-y</key>
-		<real>0.28666666150093079</real>
+		<real>0.1666666716337204</real>
 		<key>pos-x</key>
-		<integer>653</integer>
+		<integer>565</integer>
 		<key>pos-y</key>
-		<integer>301</integer>
+		<integer>175</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -129,11 +129,7 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array>
-		<array>
-			<integer>4</integer>
-		</array>
-	</array>
+	<array/>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>

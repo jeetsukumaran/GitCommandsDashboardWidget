@@ -19,10 +19,10 @@
 	<key>CloseBoxInsetY</key>
 	<integer>15</integer>
 	<key>Height</key>
-	<integer>448</integer>
+	<integer>488</integer>
 	<key>MainHTML</key>
 	<string>GitCommands.html</string>
 	<key>Width</key>
-	<integer>374</integer>
+	<integer>402</integer>
 </dict>
 </plist>

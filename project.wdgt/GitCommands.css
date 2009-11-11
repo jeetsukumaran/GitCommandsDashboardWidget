@@ -66,12 +66,12 @@ body {
 
 #topRectangleShape {
     position: absolute;
-    height: 34px;
-    bottom: 403px;
-    margin-top: auto;
     right: 3px;
     width: auto;
     left: 11px;
+    top: 11px;
+    bottom: 403px;
+    height: auto;
 }
 
 #scrollArea {
@@ -105,18 +105,18 @@ body {
     text-align: left;
     height: 21px;
     width: 149px;
-    left: 217px;
     top: 19px;
+    left: 245px;
 }
 
 #bottomRectangleShape {
     position: absolute;
-    top: 410px;
     right: 3px;
     width: auto;
-    bottom: 10px;
-    height: auto;
     left: 11px;
+    height: 28px;
+    bottom: 10px;
+    margin-top: auto;
 }
 
 #body {
@@ -130,5 +130,5 @@ body {
     width: 139px;
     color: rgb(255, 255, 255);
     top: 19px;
-    left: 32px;
+    left: 22px;
 }
