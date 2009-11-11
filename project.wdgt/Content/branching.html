@@ -1,66 +1,63 @@
-<div class="gitcheatsection">
-    <p class="gitcheatsectiontitle">Branching</p>
-    <dl class="gitcheatsectionbody">
+<div class="section">
+    <p class="sectiontitle">Branching</p>
 
-        <dt class="gitcheatterm">git branch</dt>
-        <dd class="gitcheatdefinition">
+    <p class="subsectiontitle">Listing Branches</p>
+    <dl class="gitcommandhelp">
+        <dt>git branch</dt>
+        <dd>
+            List all local branches.
+        </dd>    
+        <dt>git branch -r</dt>
+        <dd>
             List all local and remote branches.
         </dd>
-
-        <dt class="gitcheatterm">git branch -r</dt>
-        <dd class="gitcheatdefinition">
-            List all local branches.
+    </dl>
+    <p class="subsectiontitle">Creating/Switching Branches</p>
+    <dl class="gitcommandhelp">
+        <dt>git branch <span class="argterm">new-branch</span></dt>
+        <dd>
+            Create a new branch named <span class="argterm">new-branch</span>, referencing the same point in history as the current branch.
+        </dd>
+        <dt>git branch <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
+        <dd>
+            Create a new branch named <span class="argterm">new-branch</span>, referencing <span class="argterm">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag.
+        </dd>
+        <dt>git branch --track <span class="argterm">new-branch</span> <span class="argterm">remote</span>/<span class="argterm">remote-branch</span></dt>
+        <dd>
+            Create a new tracking branch named <span class="argterm">new-branch</span>, referencing, and pushing/pulling from, branch <span class="argterm">remote-branch</span>, on remote repository <span class="argterm">remote</span>.
+        </dd>
+        <dt>git checkout -b <span class="argterm">new-branch</span></dt>
+        <dd>
+            Create a new branch <span class="argterm">new-branch</span>, referencing the current point, and check it out (switch to it).
+        </dd>
+        <dt>git checkout -b <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
+        <dd>
+            Create a new branch <span class="argterm">new-branch</span>, referencing <span class="argterm">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag, and check it out (switch to it).
+        </dd>
+        <dt>git checkout <span class="argterm">branch</span></dt>
+        <dd>
+            Make the current branch <span class="argterm">branch</span>, updating the working directory to reflect the version referenced by <span class="argterm">branch</span>.
+        </dd>
+    </dl>
+    <p class="subsectiontitle">Deleting Branches</p>
+    <dl class="gitcommandhelp">
+        <dt>git branch -d <span class="argterm">branch</span></dt>
+        <dd>
+            Delete the local branch <span class="argterm">branch</span> (fails if <span class="argterm">branch</span> is not reachable from the current branch).
+        </dd>
+        <dt>git branch -D <span class="argterm">branch</span></dt>
+        <dd>
+            Force delete of the local branch <span class="argterm">branch</span> (works even if <span class="argterm">branch</span> is not reachable from the current branch).
         </dd>
 
-        <dt class="gitcheatterm">git branch <span class="gitcheatargument">new-branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Create a new branch named <span class="gitcheatargument">new-branch</span>, referencing the same point in history as the current branch.
-        </dd>
-
-        <dt class="gitcheatterm">git branch <span class="gitcheatargument">new-branch</span> <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            Create a new branch named <span class="gitcheatargument">new-branch</span>, referencing <span class="gitcheatargument">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag.
-        </dd>
-
-        <dt class="gitcheatterm">git branch --track <span class="gitcheatargument">new-branch</span> <span class="gitcheatargument">remote</span>/<span class="gitcheatargument">remote-branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Create a new tracking branch named <span class="gitcheatargument">new-branch</span>, referencing, and pushing/pulling from, branch <span class="gitcheatargument">remote-branch</span>, on remote repository <span class="gitcheatargument">remote</span>.
-        </dd>
-
-        <dt class="gitcheatterm">git branch -d <span class="gitcheatargument">branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Delete the local branch <span class="gitcheatargument">branch</span> (fails if <span class="gitcheatargument">branch</span> is not reachable from the current branch).
-        </dd>
-
-        <dt class="gitcheatterm">git branch -D <span class="gitcheatargument">branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Force delete of the local branch <span class="gitcheatargument">branch</span> (works even if <span class="gitcheatargument">branch</span> is not reachable from the current branch).
-        </dd>
-
-        <dt class="gitcheatterm">git branch -d -r <span class="gitcheatargument">remote</span>/<span class="gitcheatargument">remote-branch</span></dt>
-        <dd class="gitcheatdefinition">
+        <dt>git branch -d -r <span class="argterm">remote</span>/<span class="argterm">remote-branch</span></dt>
+        <dd>
             Delete a &quot;local remote&quot; branch, i.e. a local tracking branch.
         </dd>
 
-        <dt class="gitcheatterm">git push <span class="gitcheatargument">remote</span> :heads/<span class="gitcheatargument">remote-branch</span></dt>
-        <dd class="gitcheatdefinition">
+        <dt>git push <span class="argterm">remote</span> :heads/<span class="argterm">remote-branch</span></dt>
+        <dd>
             Delete a branch from a remote repository.
         </dd>
-
-        <dt class="gitcheatterm">git checkout <span class="gitcheatargument">branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Make the current branch <span class="gitcheatargument">branch</span>, updating the working directory to reflect the version referenced by <span class="gitcheatargument">branch</span>.
-        </dd>
-
-        <dt class="gitcheatterm">git checkout -b <span class="gitcheatargument">new-branch</span></dt>
-        <dd class="gitcheatdefinition">
-            Create a new branch <span class="gitcheatargument">new-branch</span>, referencing the current point, and check it out (switch to it).
-        </dd>
-
-        <dt class="gitcheatterm">git checkout -b <span class="gitcheatargument">new-branch</span> <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            Create a new branch <span class="gitcheatargument">new-branch</span>, referencing <span class="gitcheatargument">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag, and check it out (switch to it).
-        </dd>
-
     </dl>
 </div>

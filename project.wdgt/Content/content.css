@@ -1,4 +1,4 @@
-div.gitcheatsection {
+div.section {
     font-family: Helvetica, Arial, sans;
     font-size: 11px;
     padding-left: 4px;
@@ -7,28 +7,34 @@ div.gitcheatsection {
     padding-bottom: 0;
 }
 
-p.gitcheatsectiontitle {
+p.sectiontitle {
     font-weight: bold;
     font-size: 12px;
 }
 
-dl.gitcheatsectionbody {
+p.subsectiontitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 10px;
+}
+
+dl.gitcommandhelp {
 
 }
 
-dt.gitcheatterm {
+dl.gitcommandhelp dt {
     font-family: AndaleMono, monospace;
-    color: darkcyan;
+    color: darkblue;
     padding: 4px;
-    background: #EEEEEF;     
+    background: #EEEEEF;
 }
 
-dd.gitcheatdefinition {
+dl.gitcommandhelp dd {
     padding: 4px;
     margin-left: 2em;
 }
 
-span.gitcheatargument {
+span.argterm {
     font-family: AndaleMono, monospace;
     font-style: italic;
     color: purple;

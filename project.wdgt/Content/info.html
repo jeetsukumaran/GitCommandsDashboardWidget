@@ -1,104 +1,105 @@
-<div class="gitcheatsection">
-    <p class="gitcheatsectiontitle">Information</p>
-    <dl class="gitcheatsectionbody">
+<div class="section">
+    <p class="sectiontitle">Information</p>
+    All of the following can be modified by the &quot;<code>[-- <span class="argterm">path</span>]</code>&quot; clause, which limits the comparisons to the file or files found on <code><span class="argterm">path</span></code>.
+    <dl class="gitcommandhelp">
 
-        <dt class="gitcheatterm">git diff</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git diff</dt>
+        <dd>
             Show unstaged changes made since your last commit.
         </dd>
 
-        <dt class="gitcheatterm">git diff -- <span class="gitcheatargument">path</span</dt>
-        <dd class="gitcheatdefinition">
-            As above, but limit comparison to file or files in sub-directory specified by <span class="gitcheatargument">path</span>.
-        </dd>
-
-        <dt class="gitcheatterm">git diff --cached</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git diff --cached</dt>
+        <dd>
             Show changes staged for commit (i.e., difference between index and last commit).
         </dd>
 
-        <dt class="gitcheatterm">git diff HEAD</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git diff HEAD</dt>
+        <dd>
             Show changes (staged and unstaged) in working directory since last commit.
         </dd>
 
-        <dt class="gitcheatterm">git diff <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            Show differences between working directory and version <span class="gitcheatargument">rev</span>, which can be any
+        <dt>git diff <span class="argterm">rev</span></dt>
+        <dd>
+            Show differences between working directory and version <span class="argterm">rev</span>, which can be any
             SHA1 commit ID, branch name, or tag.
         </dd>
 
-        <dt class="gitcheatterm">git diff <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            As above, but limit comparison to file or files in sub-directory specified by <span class="gitcheatargument">path</span>.
-        </dd>
-
-        <dt class="gitcheatterm">git diff <span class="gitcheatargument">rev1</span>..<span class="gitcheatargument">rev2</span></dt>
-        <dd class="gitcheatdefinition">
+        <dt>git diff <span class="argterm">rev1</span>..<span class="argterm">rev2</span></dt>
+        <dd>
             Show differences between two versions, which can be specified by any
             SHA1 commit ID, branch name, or tag.
         </dd>
 
-        <dt class="gitcheatterm">git diff <span class="gitcheatargument">rev1</span>...<span class="gitcheatargument">rev2</span></dt>
-        <dd class="gitcheatdefinition">
-            Show differences between the last common ancestor of <span class="gitcheatargument">rev1</span> and <span class="gitcheatargument">rev2</span>, specified by any
+        <dt>git diff <span class="argterm">rev1</span>...<span class="argterm">rev2</span></dt>
+        <dd>
+            Show differences between the last common ancestor of <span class="argterm">rev1</span> and <span class="argterm">rev2</span>, specified by any
             SHA1 commit ID, branch name, or tag.
         </dd>
 
-        <dt class="gitcheatterm">git status</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git status</dt>
+        <dd>
             Show files added to the index, files with changes, and untracked files.
         </dd>
 
-        <dt class="gitcheatterm">git log</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git log</dt>
+        <dd>
             Show recent commits, most recent on top.
         </dd>
 
-        <dt class="gitcheatterm">git log --stat</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git log --stat</dt>
+        <dd>
             Show recent commits, with stats (files changed, insertions, and deletions).
         </dd>
 
-        <dt class="gitcheatterm">git log --author=<span class="gitcheatargument">author</span></dt>
-        <dd class="gitcheatdefinition">
-            Show recent commits, only by <span class="gitcheatargument">author</span>.
+        <dt>git log --author=<span class="argterm">author</span></dt>
+        <dd>
+            Show recent commits, only by <span class="argterm">author</span>.
         </dd>
 
-        <dt class="gitcheatterm">git log -p</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git log -p</dt>
+        <dd>
             Show recent commits, with full diffs.
         </dd>
 
-        <dt class="gitcheatterm">git log --after=&quot;<span class="gitcheatargument">MMM DD YYYY</span>&quot;</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git log --after=&quot;<span class="argterm">MMM DD YYYY</span>&quot;</dt>
+        <dd>
             Show commits that occur after a certain date, e.g. &quot;Jun 20 2008&quot;.
         </dd>
 
-        <dt class="gitcheatterm">git log --before=&quot;<span class="gitcheatargument">MMM DD YYYY</span>&quot;</dt>
-        <dd class="gitcheatdefinition">
+        <dt>git log --before=&quot;<span class="argterm">MMM DD YYYY</span>&quot;</dt>
+        <dd>
             Show commits that occur before a certain date.
         </dd>
 
-        <dt class="gitcheatterm">git show <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            Show the changeset (diff) of a commit specified by <span class="gitcheatargument">rev</span>, which can be any
+        <dt>git show <span class="argterm">rev</span></dt>
+        <dd>
+            Show the changeset (diff) of a commit specified by <span class="argterm">rev</span>, which can be any
             SHA1 commit ID, branch name, or tag.
         </dd>
 
-        <dt class="gitcheatterm">git blame <span class="gitcheatargument">file</span></dt>
-        <dd class="gitcheatdefinition">
-            Show who authored each line in <span class="gitcheatargument">file</span>.
+        <dt>git show <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
+        <dd>
+            Show the changeset (diff) of a commit <span class="argterm">rev</span> on file or subdirectory <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the current directory.
         </dd>
 
-        <dt class="gitcheatterm">git blame <span class="gitcheatargument">file</span> <span class="gitcheatargument">rev</span></dt>
-        <dd class="gitcheatdefinition">
-            Show who authored each line in <span class="gitcheatargument">file</span> as of <span class="gitcheatargument">rev</span> (allows blame to go back in time).
+        <dt>git show <span class="argterm">rev</span>:<span class="argterm">path</span></dt>
+        <dd>
+            Show full contents of <span class="argterm">rev</span> version of <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the root of the git respository.
         </dd>
 
-        <dt class="gitcheatterm">git whatchanged <span class="gitcheatargument">file</span></dt>
-        <dd class="gitcheatdefinition">
-            Show only the commits which affected <span class="gitcheatargument">file</span> listing the most recent first.
+        <dt>git blame <span class="argterm">file</span></dt>
+        <dd>
+            Show who authored each line in <span class="argterm">file</span>.
+        </dd>
+
+        <dt>git blame <span class="argterm">file</span> <span class="argterm">rev</span></dt>
+        <dd>
+            Show who authored each line in <span class="argterm">file</span> as of <span class="argterm">rev</span> (allows blame to go back in time).
+        </dd>
+
+        <dt>git whatchanged <span class="argterm">file</span></dt>
+        <dd>
+            Show only the commits which affected <span class="argterm">file</span> listing the most recent first.
         </dd>
     </dl>
 </div>
