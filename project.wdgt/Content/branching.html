@@ -1,0 +1,66 @@
+<div class="gitcheatsection">
+    <p class="gitcheatsectiontitle">Branching</p>
+    <dl class="gitcheatsectionbody">
+
+        <dt class="gitcheatterm">git branch</dt>
+        <dd class="gitcheatdefinition">
+            List all local and remote branches.
+        </dd>
+
+        <dt class="gitcheatterm">git branch -r</dt>
+        <dd class="gitcheatdefinition">
+            List all local branches.
+        </dd>
+
+        <dt class="gitcheatterm">git branch <span class="gitcheatargument">new-branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Create a new branch named <span class="gitcheatargument">new-branch-name</span>, referencing the same point in history as the current branch.
+        </dd>
+
+        <dt class="gitcheatterm">git branch <span class="gitcheatargument">new-branch-name</span> <span class="gitcheatargument">start-point-rev</span></dt>
+        <dd class="gitcheatdefinition">
+            Create a new branch named <span class="gitcheatargument">new-branch-name</span>, referencing <span class="gitcheatargument">start-point-rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag.
+        </dd>
+
+        <dt class="gitcheatterm">git branch --track <span class="gitcheatargument">new-branch-name</span> <span class="gitcheatargument">remote-name</span>/remote-branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Create a new tracking branch named <span class="gitcheatargument">new-branch-name</span>, referencing, and pushing/pulling from, branch <span class="gitcheatargument">remote-branch-name</span>, on remote repository <span class="gitcheatargument">remote-name</span>.
+        </dd>
+
+        <dt class="gitcheatterm">git branch -d <span class="gitcheatargument">branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Delete the local branch <span class="gitcheatargument">branch-name</span> (fails if <span class="gitcheatargument">branch-name</span> is not reachable from the current branch).
+        </dd>
+
+        <dt class="gitcheatterm">git branch -D <span class="gitcheatargument">branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Force delete of the local branch <span class="gitcheatargument">branch-name</span> (works even if <span class="gitcheatargument">branch-name</span> is not reachable from the current branch).
+        </dd>
+
+        <dt class="gitcheatterm">git branch -d -r <span class="gitcheatargument">remote-name</span>/<span class="gitcheatargument">remote-branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Delete a &quot;local remote&quot; branch, i.e. a local tracking branch.
+        </dd>
+
+        <dt class="gitcheatterm">git push <span class="gitcheatargument">remote-name</span> :heads/<span class="gitcheatargument">remote-branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Delete a branch from a remote repository.
+        </dd>
+
+        <dt class="gitcheatterm">git checkout <span class="gitcheatargument">branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Make the current branch <span class="gitcheatargument">branch-name</span>, updating the working directory to reflect the version referenced by <span class="gitcheatargument">branch-name</span>.
+        </dd>
+
+        <dt class="gitcheatterm">git checkout -b <span class="gitcheatargument">new-branch-name</span></dt>
+        <dd class="gitcheatdefinition">
+            Create a new branch <span class="gitcheatargument">new-branch-name</span>, referencing the current point, and check it out (switch to it).
+        </dd>
+
+        <dt class="gitcheatterm">git checkout -b <span class="gitcheatargument">new-branch-name</span> <span class="gitcheatargument">start-point-rev</span></dt>
+        <dd class="gitcheatdefinition">
+            Create a new branch <span class="gitcheatargument">new-branch-name</span>, referencing <span class="gitcheatargument">start-point-rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag, and check it out (switch to it).
+        </dd>
+
+    </dl>
+</div>

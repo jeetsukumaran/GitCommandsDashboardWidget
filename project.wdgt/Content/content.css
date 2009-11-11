@@ -1,0 +1,35 @@
+div.gitcheatsection {
+    font-family: Helvetica, Arial, sans;
+    font-size: 11px;
+    padding-left: 4px;
+    padding-right: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+p.gitcheatsectiontitle {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+dl.gitcheatsectionbody {
+
+}
+
+dt.gitcheatterm {
+    font-family: AndaleMono, monospace;
+    color: darkcyan;
+    padding: 4px;
+    background: #EEEEEF;     
+}
+
+dd.gitcheatdefinition {
+    padding: 4px;
+    margin-left: 2em;
+}
+
+span.gitcheatargument {
+    font-family: AndaleMono, monospace;
+    font-style: italic;
+    color: purple;
+}
