@@ -27,11 +27,11 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>deb0f19b04abb041</string>
+		<string>478db96406abb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojIiliKq/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojYYYToU/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
@@ -39,13 +39,13 @@
 		<key>percent-type</key>
 		<integer>1</integer>
 		<key>percent-x</key>
-		<real>0.3363095223903656</real>
+		<real>0.32440477609634399</real>
 		<key>percent-y</key>
-		<real>0.1666666716337204</real>
+		<real>0.21047618985176086</real>
 		<key>pos-x</key>
-		<integer>565</integer>
+		<integer>545</integer>
 		<key>pos-y</key>
-		<integer>175</integer>
+		<integer>221</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
