@@ -1,0 +1,22 @@
+<div class="section">
+    <p class="sectiontitle">Reverting</p>
+
+    <dl class="gitcommandhelp">
+
+        <dt>git revert <span class="argterm">rev</span></dt>
+        <dd>
+        Reverse commit specified by <span class="argterm">rev</span>, which can be any SHA1 commit ID, branch name, or tag, and commit the result. This does <em>not</em> do the same thing as similarly named commands in other VCS's such as &quot;<code>svn revert</code>&quot; or &quot;<code>bzr revert</code>&quot;.
+        </dd>
+
+        <dt>git checkout <span class="argterm">path(s)</span></dt>
+        <dd>
+        Re-checkout file or files specified by <span class="argterm">path(s)</span>, overwriting any local changes. This is most similar to &quot;<code>svn revert</code>&quot;.
+        </dd>
+
+        <dt>git checkout <span class="argterm">rev</span> <span class="argterm">path(s)</span></dt>
+        <dd>
+        Re-checkout file or files specified by <span class="argterm">path(s)</span> to version specified by <span class="argterm">rev</span>, overwriting any local changes.
+        </dd>
+
+    </dl>
+</div>
