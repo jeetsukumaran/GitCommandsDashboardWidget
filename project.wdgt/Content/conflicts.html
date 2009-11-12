@@ -1,0 +1,24 @@
+<div class="section">
+    <p class="sectiontitle">Conflicts</p>
+    <dl class="gitcommandhelp">
+        <dt>git mergetool</dt>
+        <dd>
+          Work through conflicted files by opening them in your mergetool (opendiff,
+          kdiff3, etc.) and choosing left/right chunks. The merged result is staged for
+          commit.
+        </dd>
+    </dl>
+    For binary files or if mergetool won't do, resolve the conflict(s) manually and
+    then do:
+
+    <pre>
+    git add <span class="argterm">file1</span> [<span class="argterm">file2</span> ...]
+    </pre>
+
+    Once all conflicts are resolved and staged, commit the pending merge with:
+
+    <pre>
+    git commit
+    </pre>
+
+</div>

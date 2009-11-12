@@ -1,0 +1,18 @@
+<div class="section">
+    <p class="sectiontitle">Configuration</p>
+You can add &quot;<code>--global</code>&quot;  after &quot;<code>git config</code>&quot;  to any of these commands to make it apply to all git repositories (writes to ~/.gitconfig).
+    <dl class="gitcommandhelp">
+        <dt>git config user.email <span class="argterm">author@email.com</span></dt>
+        <dd>
+            Set email for commit messages.
+        </dd>
+        <dt>git config user.name '<span class="argterm">author name</span>'</dt>
+        <dd>
+            Set name for commit messages.
+        </dd>
+        <dt>git config branch.autosetupmerge true</dt>
+        <dd>
+            Tells git-branch and git-checkout to setup new branches so that <code>git-pull(1)</code> will appropriately merge from that remote branch.  Recommended.  Without this, you will have to add &quot;<code>--track</code>&quot; to your branch command or manually merge remote tracking branches with &quot;<code>fetch</code>&quot; and then &quot;<code>merge</code>&quot;.
+        </dd>
+    </dl>
+</div>
