@@ -1,0 +1,18 @@
+<div class="section">
+    <p class="sectiontitle">Searching</p>
+    <p class="subsectiontitle">Searching for Content</p>
+    <dl class="gitcommandhelp">
+        <dt>git grep '<span class="argterm">regexp</span>'</dt>
+        <dd>
+            Search working tree for regular expression <span class="argterm">regexp</span>.
+        </dd>
+        <dt>git grep '<span class="argterm">regexp</span>' $(git rev-list --all)</dt>
+        <dd>
+            Search working trees of <em>all</em> revisions for regular expression <span class="argterm">regexp</span>.
+        </dd>
+        <dt>git grep '<span class="argterm">regexp</span>' $(git rev-list <span class="argterm">rev1</span>..<span class="argterm">rev2</span>)</dt>
+        <dd>
+            Search working trees of all revisions between <span class="argterm">rev1</span> and <span class="argterm">rev2</span> for regular expression <span class="argterm">regexp</span>.
+        </dd>
+    </dl>
+</div>

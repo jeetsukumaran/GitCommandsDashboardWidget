@@ -1,7 +1,7 @@
 <div class="section">
+    Reverting is different from resetting in that the changeset is applied to the current working tree (or specific files in the working tree if a &quot;<code>path</code>&quot; argument is given), without modifying the index or changing HEAD. In other words, the reverts are applied as <em>new</em> modifications to the <em>current</em> state of the repository, recording the commit as an extension to the current history. In contrast, resetting generally results in at least a partial return to a previous point in history and &quot;re-starting&quot; from there.
     <p class="sectiontitle">Undo</p>
     <p class="subsectiontitle">Reverting</p>
-    Reverting is different from resetting in that the changeset is applied to the current working tree (or specific files in the working tree if a &quot;<code>path</code>&quot; argument is given), without modifying the index or changing HEAD. In other words, the reverts are applied as <em>new</em> modifications to the <em>current</em> state of the repository, as opposed to returning to a previous point in history and &quot;starting&quot; from there.
     <dl class="gitcommandhelp">
         <dt>git revert <span class="argterm">rev</span></dt>
         <dd>
@@ -13,7 +13,7 @@
         </dd>
         <dt>git checkout <span class="argterm">rev</span> <span class="argterm">path(s)</span></dt>
         <dd>
-        Re-checkout file or files specified by <span class="argterm">path(s)</span> to version specified by <span class="argterm">rev</span>.
+        Re-checkout file or files specified by <span class="argterm">path(s)</span> to version specified by <span class="argterm">rev</span>, overwriting any local changes.
         </dd>
     </dl>
     <p class="subsectiontitle">Resetting</p>
