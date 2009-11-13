@@ -129,9 +129,8 @@ function displayAllSections() {
     displayHTML = displayHTML + readUrl("sharing.html");    
     displayHTML = displayHTML + readUrl("branching.html");      
     displayHTML = displayHTML + readUrl("merging.html");
-    displayHTML = displayHTML + readUrl("conflicts.html");    
-    displayHTML = displayHTML + readUrl("reverting.html");    
-    displayHTML = displayHTML + readUrl("fixmistakesundo.html");
+    displayHTML = displayHTML + readUrl("conflicts.html");       
+    displayHTML = displayHTML + readUrl("undo.html");
     displayHTML = displayHTML + readUrl("stashing.html");                        
     displayHTML = displayHTML + readUrl("configuration.html");
     displayHTML = displayHTML + readUrl("environment.html");    
@@ -168,10 +167,8 @@ function displayContent(event)
             contentFile = "merging.html";    
         } else if (selectedItem == "Conflicts") {
             contentFile = "conflicts.html";
-        } else if (selectedItem == "Reverting") {
-            contentFile = "reverting.html";  
-        } else if (selectedItem == "FixMistakes") {
-            contentFile = "fixmistakesundo.html";
+        } else if (selectedItem == "Undo") {
+            contentFile = "undo.html";  
         } else if (selectedItem == "Plumbing") {
             contentFile = "plumbing.html";
         } else if (selectedItem == "Stashing") {

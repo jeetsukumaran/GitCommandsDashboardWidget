@@ -129,7 +129,13 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array/>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+		</array>
+	</array>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>
