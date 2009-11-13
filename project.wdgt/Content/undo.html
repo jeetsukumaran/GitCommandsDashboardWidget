@@ -16,26 +16,26 @@
         Re-checkout file or files specified by <span class="argterm">path(s)</span> to version specified by <span class="argterm">rev</span>.
         </dd>
     </dl>
-    <p class="sectionsubtitle">Resetting</p>
+    <p class="subsectiontitle">Resetting</p>
     <dl class="gitcommandhelp">
         <dt>git reset</dt>
         <dd>
-           Resets the index (i.e., removes all changes staged for commit) but does not modify the working tree (i.e., the changes in the files are preserved).
-        </dd>
-        <dt>git reset <span class="argterm">rev</span></dt>
-        <dd>
-           Sets the current HEAD to the commit specified by <span
-           class="argterm">rev</span>, and resets the index but not the working tree.
+           Resets the index (i.e., removes all changes staged for commit) but does not modify the working tree (i.e., the changes in the files are preserved), and does not change HEAD.
         </dd>
         <dt>git reset <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
         <dd>
            Restores file or files specified by <span class="argterm">path</span> to
-           version specified by <span class="argterm">rev</span>, <emph>without</emph> moving HEAD.
+           version specified by <span class="argterm">rev</span>, without changing HEAD.
+        </dd>
+        <dt>git reset <span class="argterm">rev</span></dt>
+        <dd>
+           Sets the current HEAD to the commit specified by <span
+           class="argterm">rev</span>, and resets the index but not the working tree (i.e current changes in the working tree are preserved).
         </dd>
         <dt>git reset --soft <span class="argterm">rev</span></dt>
         <dd>
            Sets the current HEAD to the commit specified by <span
-           class="argterm">rev</span>, but keep changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<code>git reset --soft HEAD^</code>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
+           class="argterm">rev</span>, and does not modify the working tree, but keeps changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<code>git reset --soft HEAD^</code>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
         </dd>
         <dt>git reset --hard</dt>
         <dd>
@@ -43,13 +43,8 @@
         </dd>
         <dt>git reset --hard <span class="argterm">rev</span></dt>
         <dd>
-        As above, but with reference to commit specified by <span
-        class="argterm">rev</span>. For example, &quot;<code>git reset --hard ORIG_HEAD</code>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<code>git reset --hard</code>&quot; instead.
-        </dd>
-        <dt>git commit --amend [-m <span class="argterm">msg</span>]</dt>
-        <dd>
-        Replace last commit message with <span class="argterm">msg</span> if given,
-        or open editor to edit last commit message.
+         Sets the current HEAD to the commit specified by <span
+           class="argterm">rev</span>, and changes the working tree to mirror HEAD (plus untracked files). For example, &quot;<code>git reset --hard ORIG_HEAD</code>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<code>git reset --hard</code>&quot; instead.
         </dd>
     </dl>
 </div>
