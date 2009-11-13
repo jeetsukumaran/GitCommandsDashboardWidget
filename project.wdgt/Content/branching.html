@@ -12,7 +12,7 @@
             List all local and remote branches.
         </dd>
     </dl>
-    <p class="subsectiontitle">Creating/Switching Branches</p>
+    <p class="subsectiontitle">Creating Branches</p>
     <dl class="gitcommandhelp">
         <dt>git branch <span class="argterm">new-branch</span></dt>
         <dd>
@@ -26,6 +26,20 @@
         <dd>
             Create a new tracking branch named <span class="argterm">new-branch</span>, referencing, and pushing/pulling from, branch <span class="argterm">remote-branch</span>, on remote repository <span class="argterm">remote</span>.
         </dd>
+    </dl>
+    <p class="subsectiontitle">Switching Branches</p>
+    <dl class="gitcommandhelp">
+        <dt>git checkout <span class="argterm">branch</span></dt>
+        <dd>
+            Make the current branch <span class="argterm">branch</span>, updating the working directory to reflect the version referenced by <span class="argterm">branch</span>.
+        </dd>
+        <dt>git checkout <span class="argterm">rev</span></dt>
+        <dd>
+            Check out (switch to) version <span class="argterm">rev</span>, without explicitly branching. Running &quot;<code>git checkout -b <span class="argterm">new-branch</span></code>&quot; will create a branch from the checked out version.
+        </dd>
+    </dl>
+    <p class="subsectiontitle">Simultaneous Creating and Switching Branches</p>
+    <dl class="gitcommandhelp">
         <dt>git checkout -b <span class="argterm">new-branch</span></dt>
         <dd>
             Create a new branch <span class="argterm">new-branch</span>, referencing the current point, and check it out (switch to it).
@@ -33,10 +47,6 @@
         <dt>git checkout -b <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
         <dd>
             Create a new branch <span class="argterm">new-branch</span>, referencing <span class="argterm">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag, and check it out (switch to it).
-        </dd>
-        <dt>git checkout <span class="argterm">branch</span></dt>
-        <dd>
-            Make the current branch <span class="argterm">branch</span>, updating the working directory to reflect the version referenced by <span class="argterm">branch</span>.
         </dd>
     </dl>
     <p class="subsectiontitle">Deleting Branches</p>
