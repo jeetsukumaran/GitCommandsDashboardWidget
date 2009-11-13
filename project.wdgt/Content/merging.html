@@ -1,0 +1,14 @@
+<div class="section">
+    <p class="sectiontitle">Merging</p>
+    In all of the following, a merge strategy can be specified by the &quot;<code>-s <span class="argterm">strategy</span></code>&quot; argument, which can be one of: &quot;resolve&quot;, &quot;recursive&quot;, &quot;octopus&quot;, &quot;ours&quot;, or &quot;subtree&quot;. If you tried a merge which resulted in a complex conflicts and would want to start over, you can recover with &quot;<code>git reset --hard</code>&quot. If you accidently merged and want to unmerge, you can &quot;<code>git reset --hard ORIG_HEAD</code>&quot;.
+    <dl class="gitcommandhelp">
+        <dt>git merge <span class="argterm">branch</span></dt>
+        <dd>
+            Merge branch <span class="argterm">branch</span> into the current branch and commit the result. This command is idempotent and can be run as many times as needed to keep the current branch up-to-date with changes in <span class="argterm">branch</span>.
+        </dd>
+        <dt>git merge <span class="argterm">branch</span> --no-commit</dt>
+        <dd>
+            Merge branch <span class="argterm">branch</span> into the current branch, but do not autocommit the result.
+        </dd>
+    </dl>
+</div>

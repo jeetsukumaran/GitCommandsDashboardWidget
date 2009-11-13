@@ -39,3 +39,9 @@ span.argterm {
     font-style: italic;
     color: purple;
 }
+
+code {
+    font-family: AndaleMono, monospace;
+    color: darkblue;
+    padding: 4px;
+}
