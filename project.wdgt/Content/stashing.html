@@ -1,0 +1,40 @@
+<div class="section">
+    <p class="sectiontitle">Stashing</p>
+       Use &quot;<code>git stash</code>&quot; when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+    <dl class="gitcommandhelp">
+        <dt>git stash save [<span class="argterm">message</span>]</dt>
+        <dd>
+           Save your local modifications to a new stash, and run &quot;<code>git reset --hard</code>&quot; to revert them. This is the default action when no subcommand is given. If <span class="argterm">message</span> is not explicitly given, then it defaults to &quot;WIP on <i>branch</i>&quot; where &quot;<i>branch</i>&quot; is the current branch name.
+        </dd>
+        <dt>git stash list</dt>
+        <dd>
+            List all current stashes.
+        </dd>
+        <dt>git stash apply [<span class="argterm">stash</span>]</dt>
+        <dd>
+           Restore the changes recorded in the stash on top of the current working tree
+           state. When no <span class="argterm">stash</span> is given, applies the latest one (<code>stash@{0}</code>). The working directory
+           must match the index.
+        </dd>
+        <dt>git stash pop [<span class="argterm">stash</span>]</dt>
+        <dd>
+           Remove a single stashed state from the stash list and apply on top of the
+           current working tree state. When no <span class="argterm">stash</span> is given, the latest one (<code>stash@{0}</code>) is assumed.
+        </dd>
+        <dt>git stash clear</dt>
+        <dd>
+           Remove all the stashed states.
+        </dd>
+        <dt>git stash drop [<span class="argterm">stash</span>]</dt>
+        <dd>
+           Remove a single stashed state from the stash list. When no <span class="argterm">stash</span> is given, it removes the latest one. i.e. <code>stash@{0}</code>.
+        </dd>
+        <dt>git stash branch <span class="argterm">new-branch</span> [<span class="argterm">stash</span>]</dt>
+        <dd>
+           Creates and checks out a new branch named <span class="argterm">new-branch</span> starting from the commit
+           at which the <span class="argterm">stash</span> was originally created, applies the changes recorded in
+           <span class="argterm">stash</span> to the new working tree and index, then drops the <span class="argterm">stash</span> if that
+           completes successfully. When no <span class="argterm">stash</span> is given, applies the latest one.
+        </dd>
+    </dl>
+</div>
