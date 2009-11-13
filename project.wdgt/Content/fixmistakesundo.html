@@ -1,44 +1,39 @@
 <div class="section">
     <p class="sectiontitle">Fix Mistakes / Undo</p>
 
-    All of the following can be modified by a &quot;<code>[-- <span class="argterm">path(s)</span>]</code>&quot; argument clause, which limits the operations to the file or files found on <code><span class="argterm">path(s)</span></code>.
-
     <dl class="gitcommandhelp">
-        <dt>git reset [-- <span class="argterm">path</span>]</dt>
+        <dt>git reset</dt>
         <dd>
-           Resets the index but not the working tree (i.e., the changed files are
-           preserved but not marked for commit) and reports what has not been updated. If <span class="argterm">path</span> is given, action is limited to file or files specified by <span class="argterm">path</span>.
+           Resets the index (i.e., removes all changes staged for commit) but does not modify the working tree (i.e., the changes in the files are preserved).
         </dd>
 
-        <dt>git reset <span class="argterm">rev</span>  [-- <span class="argterm">path</span>]</dt>
+        <dt>git reset <span class="argterm">rev</span></dt>
         <dd>
-           Sets the current head to the commit specified by <span
-           class="argterm">rev</span>, which can be any SHA1 commit ID, branch
-           name, or tag, and resets the index but not the working tree. If <span class="argterm">path</span> is given, action is limited to file or files specified by <span class="argterm">path</span>.
+           Sets the current HEAD to the commit specified by <span
+           class="argterm">rev</span>, and resets the index but not the working tree.
         </dd>
 
-        <dt>git reset --soft</dt>
+        <dt>git reset <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
         <dd>
-            Undo last commit, but keep all changes since in the index for editing.
+           Restores file or files specified by <span class="argterm">path</span> to
+           version specified by <span class="argterm">rev</span>, <emph>without</emph> moving HEAD.
         </dd>
 
         <dt>git reset --soft <span class="argterm">rev</span></dt>
         <dd>
-           Sets the current head to the commit specified by <span
-           class="argterm">rev</span>, which can be any SHA1 commit ID, branch
-           name, or tag, but keep changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<code>git reset --soft HEAD^</code>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
+           Sets the current HEAD to the commit specified by <span
+           class="argterm">rev</span>, but keep changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<code>git reset --soft HEAD^</code>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
         </dd>
 
-        <dt>git reset --hard  [-- <span class="argterm">path</span>]</dt>
+        <dt>git reset --hard</dt>
         <dd>
-        Abandon <strong>all</strong> changes since last commit, restoring working tree to its last committed state (plus untracked files). If <span class="argterm">path</span> is given, action is limited to file or files specified by <span class="argterm">path</span>.
+        Abandon <strong>all</strong> changes since last commit, restoring working tree to its last committed state (plus untracked files).
         </dd>
 
-        <dt>git reset --hard <span class="argterm">rev</span> [-- <span class="argterm">path</span>]</dt>
+        <dt>git reset --hard <span class="argterm">rev</span></dt>
         <dd>
         As above, but with reference to commit specified by <span
-        class="argterm">rev</span>, which can be any SHA1 commit ID, branch
-        name, or tag. For example, &quot;<code>git reset --hard ORIG_HEAD</code>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. If <span class="argterm">path</span> is given, action is limited to file or files specified by <span class="argterm">path</span>. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<code>git reset --hard</code>&quot; instead.
+        class="argterm">rev</span>. For example, &quot;<code>git reset --hard ORIG_HEAD</code>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<code>git reset --hard</code>&quot; instead.
         </dd>
 
         <dt>git commit --amend [-m <span class="argterm">msg</span>]</dt>
