@@ -1,4 +1,5 @@
 <div class="section">
+    In all of the following, '<span class="argterm">regexp</span>' may be replaced by more complex expression using the <code>-e</code>, <code>--and</code>, <code>--or</code> and/or <code>--not</code> arguments.
     <p class="sectiontitle">Searching</p>
     <p class="subsectiontitle">Searching for Content</p>
     <dl class="gitcommandhelp">
@@ -12,7 +13,7 @@
         </dd>
         <dt>git grep '<span class="argterm">regexp</span>' $(git rev-list <span class="argterm">rev1</span>..<span class="argterm">rev2</span>)</dt>
         <dd>
-            Search working trees of all revisions between <span class="argterm">rev1</span> and <span class="argterm">rev2</span> for regular expression <span class="argterm">regexp</span>.
+            Search working trees of all revisions between <span class="argterm">rev1</span> and <span class="argterm">rev2</span> (which may be specified using a SHA1 commit ID, branch name, or tag) for regular expression <span class="argterm">regexp</span>.
         </dd>
     </dl>
 </div>
