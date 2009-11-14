@@ -3,15 +3,15 @@
     <dl class="gitcommandhelp">
         <dt>git push [<span class="argterm">remote</span>]</dt>
         <dd>
-            Update the remote repository named <span class="argterm">remote</span> with commits across all branches that are <em>common</em> between your local repository and <span class="argterm">remote</span>. If <span class="argterm">remote</span> is not specified, but a remote named &quot;<code>origin</code>&quot; is defined, then <span class="argterm">remote</span> defaults to &quot;<code>origin</code>&quot;. Local branches that were never pushed to the server in the first place are not shared.
+            Update the remote repository named <span class="argterm">remote</span> with commits across all branches that are <em>common</em> between your local repository and <span class="argterm">remote</span>. If <span class="argterm">remote</span> is not specified, but a remote named &quot;<span class="code">origin</span>&quot; is defined, then <span class="argterm">remote</span> defaults to &quot;<span class="code">origin</span>&quot;. Local branches that were never pushed to the server in the first place are not shared.
         </dd>
         <dt>git push <span class="argterm">remote</span> <span class="argterm">branch</span></dt>
         <dd>
-            Update the remote repository named <span class="argterm">remote</span> (e.g. &quot;<code>origin</code>&quot;) with commits made to <span class="argterm">branch</span> since the last push. This is always required for new local branches (including &quot;<code>master</code>&quot; in a new repository). After the first explicit push, &quot;<code>git push</code>&quot; by itself is sufficient.
+            Update the remote repository named <span class="argterm">remote</span> (e.g. &quot;<span class="code">origin</span>&quot;) with commits made to <span class="argterm">branch</span> since the last push. This is always required for new local branches (including &quot;<span class="code">master</span>&quot; in a new repository). After the first explicit push, &quot;<span class="code">git push</span>&quot; by itself is sufficient.
         </dd>
         <dt>git pull <span class="argterm">remote</span></dt>
         <dd>
-            Update the current branch with changes from the remote named <span class="argterm">remote</span> (defaults to &quot;<code>origin</code>&quot; if not given). Note that for this to work, &quot;<code>.git/config</code>&quot; must define merge configuration variables for the current branch, e.g.:
+            Update the current branch with changes from the remote named <span class="argterm">remote</span> (defaults to &quot;<span class="code">origin</span>&quot; if not given). Note that for this to work, &quot;<span class="code">.git/config</span>&quot; must define merge configuration variables for the current branch, e.g.:
             <pre>
             [branch "master"]
                 remote = origin
@@ -20,7 +20,7 @@
         </dd>
         <dt>git pull <span class="argterm">remote</span> <span class="argterm">remote-branch</span></dt>
         <dd>
-            Update the current branch with changes from the remote branch <span class="argterm">remote-branch</span> on the remote named <span class="argterm">remote</span> (defaults to &quot;<code>origin</code>&quot; if not given). This explicit form of &quot;<code>git pull</code>&quot; is required if &quot;<code>.git/config</code>&quot; does not have a merge specification defined for the current branch.
+            Update the current branch with changes from the remote branch <span class="argterm">remote-branch</span> on the remote named <span class="argterm">remote</span> (defaults to &quot;<span class="code">origin</span>&quot; if not given). This explicit form of &quot;<span class="code">git pull</span>&quot; is required if &quot;<span class="code">.git/config</span>&quot; does not have a merge specification defined for the current branch.
         </dd>
     </dl>
 </div>

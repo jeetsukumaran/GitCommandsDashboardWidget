@@ -9,7 +9,7 @@
 		<key>ContentSplitViewConfig</key>
 		<integer>8</integer>
 		<key>SplitViewConfig</key>
-		<integer>2</integer>
+		<integer>3</integer>
 		<key>_collapsingFrameDimension</key>
 		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
@@ -18,8 +18,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1242, 581}}</string>
-			<string>{{0, 591}, {1242, 261}}</string>
+			<string>{{0, 0}, {1242, 260}}</string>
+			<string>{{0, 270}, {1242, 582}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -27,25 +27,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>9548d2ea64aeb041</string>
+		<string>7de9797268aeb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojtzvOPX/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojqZe8N0/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>2</integer>
+		<integer>3</integer>
 		<key>percent-x</key>
-		<real>0.35357141494750977</real>
+		<real>0.38035714626312256</real>
 		<key>percent-y</key>
-		<real>0.069523811340332031</real>
+		<real>0.26761904358863831</real>
 		<key>pos-x</key>
-		<integer>684</integer>
+		<integer>639</integer>
 		<key>pos-y</key>
-		<integer>73</integer>
+		<integer>281</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>

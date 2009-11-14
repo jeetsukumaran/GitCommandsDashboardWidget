@@ -18,16 +18,18 @@ p.subsectiontitle {
     font-size: 10px;
 }
 
+span.code, dl.gitcommandhelp dt {
+    font-family: AndaleMono, monospace;
+    color: darkblue;
+    padding: 4px;
+}
+
 dl.gitcommandhelp {
 
 }
 
 dl.gitcommandhelp dt {
-    font-family: AndaleMono, monospace;
-    color: darkblue;
-    padding: 4px;
     background: #EEEEEF;
-    font-weight: bold;    
 }
 
 dl.gitcommandhelp dd {
@@ -38,12 +40,7 @@ dl.gitcommandhelp dd {
 span.argterm {
     font-family: AndaleMono, monospace;
     color: purple;
-    font-weight: bold;
+    font-weight: normal;
+    font-style: italic;
 }
 
-code {
-    font-family: AndaleMono, monospace;
-    color: darkblue;
-    padding: 4px;
-    font-weight: bold;    
-}

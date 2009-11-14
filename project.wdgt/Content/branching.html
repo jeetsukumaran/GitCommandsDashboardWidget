@@ -16,58 +16,58 @@
     <dl class="gitcommandhelp">
         <dt>git branch <span class="argterm">new-branch</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span>, referencing the same point in history as the current branch.
+            Create a new branch named <span class="argterm">new-branch</span>, based on current branch.
         </dd>
         <dt>git branch <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span>, referencing <span class="argterm">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag.
+            Create a new branch named <span class="argterm">new-branch</span>, based on revision specified by tree-ish <span class="argterm">rev</span>.
         </dd>
         <dt>git branch --track <span class="argterm">new-branch</span> <span class="argterm">remote</span>/<span class="argterm">remote-branch</span></dt>
         <dd>
-            Create a new tracking branch named <span class="argterm">new-branch</span>, referencing, and pushing/pulling from, branch <span class="argterm">remote-branch</span>, on remote repository <span class="argterm">remote</span>.
+            Create a new tracking branch named <span class="argterm">new-branch</span>, referencing, and pushing/pulling from, the branch named <span class="argterm">remote-branch</span> on remote repository named <span class="argterm">remote</span>.
         </dd>
     </dl>
-    <p class="subsectiontitle">Switching Branches</p>
+    <p class="subsectiontitle">Checking Out Branches/Revisions</p>
     <dl class="gitcommandhelp">
         <dt>git checkout <span class="argterm">branch</span></dt>
         <dd>
-            Make the current branch <span class="argterm">branch</span>, updating the working directory to reflect the version referenced by <span class="argterm">branch</span>.
+            Switch to branch named <span class="argterm">branch</span>. This updates the working tree to reflect the state of the branch named <span class="argterm">branch</span>, and sets HEAD to &quot;<span class="code">.git/refs/heads/<span class="argterm">branch</span></span>&quot;.
         </dd>
         <dt>git checkout <span class="argterm">rev</span></dt>
         <dd>
-            Check out (switch to) version <span class="argterm">rev</span>, without explicitly branching. Running &quot;<code>git checkout -b <span class="argterm">new-branch</span></code>&quot; will create a branch from the checked out version.
+            Switch to revision specified by tree-ish <span class="argterm">rev</span>, without explicitly branching. Running &quot;<span class="code">git checkout -b <span class="argterm">new-branch</span></span>&quot; will create a branch from the checked out version.
         </dd>
     </dl>
     <p class="subsectiontitle">Simultaneous Creating and Switching Branches</p>
     <dl class="gitcommandhelp">
         <dt>git checkout -b <span class="argterm">new-branch</span></dt>
         <dd>
-            Create a new branch <span class="argterm">new-branch</span>, referencing the current point, and check it out (switch to it).
+            Create a new branch named <span class="argterm">new-branch</span>, referencing the current branch, and check it out.
         </dd>
         <dt>git checkout -b <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
         <dd>
-            Create a new branch <span class="argterm">new-branch</span>, referencing <span class="argterm">rev</span>, which may be specified using a SHA1 commit ID, branch name, or tag, and check it out (switch to it).
+            Create a new branch named <span class="argterm">new-branch</span> based on the tree-ish <span class="argterm">rev</span>, and check it out (switch to it).
         </dd>
     </dl>
     <p class="subsectiontitle">Deleting Branches</p>
     <dl class="gitcommandhelp">
         <dt>git branch -d <span class="argterm">branch</span></dt>
         <dd>
-            Delete the local branch <span class="argterm">branch</span> (fails if <span class="argterm">branch</span> is not reachable from the current branch).
+            Delete the local branch named <span class="argterm">branch</span> (fails if <span class="argterm">branch</span> is not reachable from the current branch).
         </dd>
         <dt>git branch -D <span class="argterm">branch</span></dt>
         <dd>
-            Force delete of the local branch <span class="argterm">branch</span> (works even if <span class="argterm">branch</span> is not reachable from the current branch).
+            Force delete of the local branch named <span class="argterm">branch</span> (works even if <span class="argterm">branch</span> is not reachable from the current branch).
         </dd>
 
-        <dt>git branch -d -r <span class="argterm">remote</span>/<span class="argterm">remote-branch</span></dt>
+        <dt>git branch -d -r <span class="argterm">remote</span>/<span class="argterm">branch</span></dt>
         <dd>
             Delete a &quot;local remote&quot; branch, i.e. a local tracking branch.
         </dd>
 
         <dt>git push <span class="argterm">remote</span> :heads/<span class="argterm">remote-branch</span></dt>
         <dd>
-            Delete a branch from a remote repository.
+            Delete a branch named <span class="argterm">branch</span> from a remote repository.
         </dd>
     </dl>
 </div>
