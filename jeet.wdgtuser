@@ -9,7 +9,7 @@
 		<key>ContentSplitViewConfig</key>
 		<integer>8</integer>
 		<key>SplitViewConfig</key>
-		<integer>3</integer>
+		<integer>2</integer>
 		<key>_collapsingFrameDimension</key>
 		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
@@ -18,8 +18,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1047, 591}}</string>
-			<string>{{0, 601}, {1047, 275}}</string>
+			<string>{{0, 0}, {1242, 581}}</string>
+			<string>{{0, 591}, {1242, 261}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -27,25 +27,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>3d45f68d33aeb041</string>
+		<string>9548d2ea64aeb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojVOTG3U/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojtzvOPX/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>3</integer>
+		<integer>2</integer>
 		<key>percent-x</key>
-		<real>0.38035714626312256</real>
+		<real>0.35357141494750977</real>
 		<key>percent-y</key>
-		<real>0.26761904358863831</real>
+		<real>0.069523811340332031</real>
 		<key>pos-x</key>
-		<integer>639</integer>
+		<integer>684</integer>
 		<key>pos-y</key>
-		<integer>281</integer>
+		<integer>73</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -61,12 +61,12 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {244, 897}}</string>
-			<string>{{245, 0}, {1048, 897}}</string>
+			<string>{{0, 0}, {244, 873}}</string>
+			<string>{{245, 0}, {1243, 873}}</string>
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>1 110 1292 918 0 0 1680 1028 </string>
+	<string>1 133 1487 894 0 0 1680 1028 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -81,8 +81,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 488}}</string>
-			<string>{{0, 498}, {246, 378}}</string>
+			<string>{{0, 0}, {246, 474}}</string>
+			<string>{{0, 484}, {246, 368}}</string>
 		</array>
 	</dict>
 	<key>Objects view expanded items</key>
@@ -129,13 +129,7 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array>
-		<array>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>3</integer>
-		</array>
-	</array>
+	<array/>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>

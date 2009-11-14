@@ -1,54 +1,86 @@
 <div class="section">
     <p class="sectiontitle">Information</p>
-    All of the following can be modified by the &quot;<code>[-- <span class="argterm">path</span>]</code>&quot; argument clause, which limits the comparisons to the file or files found on <code><span class="argterm">path</span></code>.
-    <dl class="gitcommandhelp">
-
-        <dt>git diff</dt>
-        <dd>
-            Show unstaged changes made since your last commit.
-        </dd>
-
-        <dt>git diff --cached</dt>
-        <dd>
-            Show changes staged for commit (i.e., difference between index and last commit).
-        </dd>
-
-        <dt>git diff HEAD</dt>
-        <dd>
-            Show changes (staged and unstaged) in working directory since last commit.
-        </dd>
-
-        <dt>git diff <span class="argterm">rev</span></dt>
-        <dd>
-            Show differences between working directory and version <span class="argterm">rev</span>, which can be any
-            SHA1 commit ID, branch name, or tag.
-        </dd>
-
-        <dt>git diff <span class="argterm">rev1</span> .. <span class="argterm">rev2</span></dt>
-        <dd>
-            Show differences between two versions, which can be specified by any
-            SHA1 commit ID, branch name, or tag.
-        </dd>
-
-        <dt>git diff <span class="argterm">rev1</span> ... <span class="argterm">rev2</span></dt>
-        <dd>
-            Show differences between the last common ancestor of <span class="argterm">rev1</span> and <span class="argterm">rev2</span>, specified by any
-            SHA1 commit ID, branch name, or tag.
-        </dd>
-
+    
+    <p class="subsectiontitle">Changes</p>
+    <dl class="gitcommandhelp">    
         <dt>git status</dt>
         <dd>
             Show files added to the index, files with changes, and untracked files.
         </dd>
+        
+        <dt>git diff [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show unstaged changes made since your last commit, limited to the file or files found on <code><span class="argterm">path</span></code> if given.
+        </dd>
 
+        <dt>git diff --cached [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show changes staged for commit (i.e., difference between index and last commit), limited to the file or files found on <code><span class="argterm">path</span></code> if given.
+        </dd>
+
+        <dt>git diff HEAD [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show changes (staged and unstaged) in working directory since last commit, limited to the file or files found on <code><span class="argterm">path</span></code> if given.
+        </dd>
+        
+        <dt>git diff <span class="argterm">rev</span> [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show differences between working directory and version <span class="argterm">rev</span>, which can be any
+            SHA1 commit ID, branch name, or tag (limited to the file or files found on <code><span class="argterm">path</span></code> if given).
+        </dd>
+        
+        <dt>git diff <span class="argterm">rev1</span>..<span class="argterm">rev2</span> [<span class="argterm">path</span>]</dt>        
+        <dd>
+            Show differences between two versions, which can be specified by any
+            SHA1 commit ID, branch name, or tag (limited to the file or files found on <code><span class="argterm">path</span></code> if given).
+        </dd>
+
+        <dt>git diff <span class="argterm">rev1</span>...<span class="argterm">rev2</span> [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show differences between the last common ancestor of <span class="argterm">rev1</span> and <span class="argterm">rev2</span>, specified by any
+            SHA1 commit ID, branch name, or tag (limited to the file or files found on <code><span class="argterm">path</span></code> if given).
+        </dd>        
+                
+    </dl>
+       
+    <p class="subsectiontitle">File and Directory Contents</p>
+    <dl class="gitcommandhelp">      
+        <dt>git show <span class="argterm">rev</span>:<span class="argterm">file</span></dt>
+        <dd>
+            Show full contents of <span class="argterm">rev</span> version of <span class="argterm">file</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag.
+        </dd>           
+        <dt>git ls-files [-t]</dt>
+        <dd>
+            Show all tracked files (&quot;<code>-t</code>&quot; shows file status).
+        </dd>       
+        <dt>git ls-files --others</dt>
+        <dd>
+            Show all untracked files.
+        </dd>                                                                          
+    </dl>
+    
+ <p class="subsectiontitle">Commit History</p>
+     <dl class="gitcommandhelp">    
         <dt>git log</dt>
         <dd>
             Show recent commits, most recent on top.
         </dd>
-
-        <dt>git log --stat</dt>
+        
+        <dt>git log <span class="argterm">path</span></dt>
         <dd>
-            Show recent commits, with stats (files changed, insertions, and deletions).
+            Show recent commits, most recent on top, limited to the file or files found on <code><span class="argterm">path</span></code> if given.
+        </dd>
+                
+        <dt>git log -g</dt>
+        <dd> Show recent commits, most recent on top, walking the full reflog entries instead of the commit ancestry chain up to the current HEAD. By default, &quot;<code>git log</code>&quot;
+        reports all commits only up to the current HEAD, even if HEAD has descendents on the current branch (as, for example, 
+        might happen if you ran &quot;<code>git reset <span class="argterm">rev</span></code>&quot; to move HEAD to a previous point in history). 
+        The &quot;<code>-g</code>&quot; option will report the full history.
+        </dd>
+
+        <dt>git log --stat [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show recent commits, with stats (files changed, insertions, and deletions), limited to the file or files found on <code><span class="argterm">path</span></code> if given.
         </dd>
 
         <dt>git log --author=<span class="argterm">author</span></dt>
@@ -59,7 +91,12 @@
         <dt>git log -p</dt>
         <dd>
             Show recent commits, with full diffs.
-        </dd>
+        </dd>        
+        
+        <dt>git log -p [<span class="argterm">path</span>]</dt>
+        <dd>
+            Show recent commits, with full diffs, limited to the file or files found on <code><span class="argterm">path</span></code> if given.
+        </dd>               
 
         <dt>git log --after=&quot;<span class="argterm">MMM DD YYYY</span>&quot;</dt>
         <dd>
@@ -70,22 +107,11 @@
         <dd>
             Show commits that occur before a certain date.
         </dd>
-
-        <dt>git show <span class="argterm">rev</span></dt>
+        
+        <dt>git whatchanged <span class="argterm">file</span></dt>
         <dd>
-            Show the changeset (diff) of a commit specified by <span class="argterm">rev</span>, which can be any
-            SHA1 commit ID, branch name, or tag.
-        </dd>
-
-        <dt>git show <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
-        <dd>
-            Show the changeset (diff) of a commit <span class="argterm">rev</span> on file or subdirectory <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the current directory.
-        </dd>
-
-        <dt>git show <span class="argterm">rev</span>:<span class="argterm">path</span></dt>
-        <dd>
-            Show full contents of <span class="argterm">rev</span> version of <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the root of the git respository.
-        </dd>
+            Show only the commits which affected <span class="argterm">file</span> listing the most recent first.
+        </dd>                
 
         <dt>git blame <span class="argterm">file</span></dt>
         <dd>
@@ -97,11 +123,6 @@
             Show who authored each line in <span class="argterm">file</span> as of <span class="argterm">rev</span> (allows blame to go back in time).
         </dd>
 
-        <dt>git whatchanged <span class="argterm">file</span></dt>
-        <dd>
-            Show only the commits which affected <span class="argterm">file</span> listing the most recent first.
-        </dd>
-
         <dt>git rev-list --all</dt>
         <dd>
             List all commits.
@@ -110,6 +131,18 @@
         <dt>git rev-list <span class="argterm">rev1</span>..<span class="argterm">rev2</span></dt>
         <dd>
             List all commits between versions <span class="argterm">rev1</span> and <span class="argterm">rev2</span> (which may be specified using a SHA1 commit ID, branch name, or tag).
+        </dd>        
+        
+        <dt>git show <span class="argterm">rev</span></dt>
+        <dd>
+            Show the changeset (diff) of a commit specified by <span class="argterm">rev</span>, which can be any
+            SHA1 commit ID, branch name, or tag. 
         </dd>
+
+        <dt>git show <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
+        <dd>
+            Show the changeset (diff) of a commit <span class="argterm">rev</span> on file or subdirectory <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the current directory.
+        </dd>                            
+
     </dl>
 </div>

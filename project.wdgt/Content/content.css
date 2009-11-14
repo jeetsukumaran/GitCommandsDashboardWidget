@@ -27,6 +27,7 @@ dl.gitcommandhelp dt {
     color: darkblue;
     padding: 4px;
     background: #EEEEEF;
+    font-weight: bold;    
 }
 
 dl.gitcommandhelp dd {
@@ -36,12 +37,13 @@ dl.gitcommandhelp dd {
 
 span.argterm {
     font-family: AndaleMono, monospace;
-    font-style: italic;
     color: purple;
+    font-weight: bold;
 }
 
 code {
     font-family: AndaleMono, monospace;
     color: darkblue;
     padding: 4px;
+    font-weight: bold;    
 }
