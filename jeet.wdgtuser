@@ -18,8 +18,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1242, 619}}</string>
-			<string>{{0, 629}, {1242, 223}}</string>
+			<string>{{0, 0}, {1242, 127}}</string>
+			<string>{{0, 137}, {1242, 715}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -27,25 +27,25 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>e7526cd960afb041</string>
+		<string>dbc47d9d76afb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojnJsWEs/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojDMEhDX/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
 		<integer>0</integer>
 		<key>percent-type</key>
-		<integer>4</integer>
+		<integer>3</integer>
 		<key>percent-x</key>
-		<real>0.37916666269302368</real>
+		<real>0.38035714626312256</real>
 		<key>percent-y</key>
-		<real>0.26190477609634399</real>
+		<real>0.26761904358863831</real>
 		<key>pos-x</key>
-		<integer>637</integer>
+		<integer>639</integer>
 		<key>pos-y</key>
-		<integer>287</integer>
+		<integer>281</integer>
 		<key>rosetta</key>
 		<false/>
 	</dict>
@@ -133,7 +133,13 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array/>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+		</array>
+	</array>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>

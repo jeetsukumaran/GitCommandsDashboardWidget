@@ -123,16 +123,18 @@ function displayAllSections() {
     var displayHTML = "";
     displayHTML = displayHTML + readUrl("setup.html");
     displayHTML = displayHTML + readUrl("adding_deleting.html");        
-    displayHTML = displayHTML + readUrl("committing.html");    
+    displayHTML = displayHTML + readUrl("committing.html");   
+    displayHTML = displayHTML + readUrl("sharing.html");           
     displayHTML = displayHTML + readUrl("info.html");    
-    displayHTML = displayHTML + readUrl("searching.html");    
-    displayHTML = displayHTML + readUrl("sharing.html");    
+    displayHTML = displayHTML + readUrl("searching.html");   
     displayHTML = displayHTML + readUrl("branching.html");      
     displayHTML = displayHTML + readUrl("merging.html");
-    displayHTML = displayHTML + readUrl("conflicts.html");       
-    displayHTML = displayHTML + readUrl("undo.html");
-    displayHTML = displayHTML + readUrl("stashing.html"); 
-    displayHTML = displayHTML + readUrl("remotes.html");                             
+    displayHTML = displayHTML + readUrl("conflicts.html");                   
+    displayHTML = displayHTML + readUrl("undoing.html");
+    displayHTML = displayHTML + readUrl("stashing.html");     
+    displayHTML = displayHTML + readUrl("cleaning.html");       
+    displayHTML = displayHTML + readUrl("remotes.html");   
+    displayHTML = displayHTML + readUrl("plumbing.html");                                       
     displayHTML = displayHTML + readUrl("configuration.html");
     displayHTML = displayHTML + readUrl("environment.html");    
     document.getElementById('maincontent').innerHTML = displayHTML;
@@ -168,8 +170,10 @@ function displayContent(event)
             contentFile = "merging.html";    
         } else if (selectedItem == "Conflicts") {
             contentFile = "conflicts.html";
-        } else if (selectedItem == "Undo") {
-            contentFile = "undo.html";  
+        } else if (selectedItem == "Undoing") {
+            contentFile = "undoing.html";  
+        } else if (selectedItem == "Cleaning") {
+            contentFile = "cleaning.html";              
         } else if (selectedItem == "Plumbing") {
             contentFile = "plumbing.html";
         } else if (selectedItem == "Stashing") {
