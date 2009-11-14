@@ -14,60 +14,60 @@
     </dl>
     <p class="subsectiontitle">Creating Branches</p>
     <dl class="gitcommandhelp">
-        <dt>git branch <span class="argterm">new-branch</span></dt>
+        <dt>git branch <span class="argtermt" title="The name of the new branch">new-branch</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span>, based on current branch.
+            Create a new branch named <span class="argtermt" title="The name of the new branch">new-branch</span>, based on current branch.
         </dd>
-        <dt>git branch <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
+        <dt>git branch <span class="argtermt" title="The name of the new branch">new-branch</span> <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span>, based on revision specified by tree-ish <span class="argterm">rev</span>.
+            Create a new branch named <span class="argtermt" title="The name of the new branch">new-branch</span>, based on revision specified by tree-ish <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>.
         </dd>
-        <dt>git branch --track <span class="argterm">new-branch</span> <span class="argterm">remote</span>/<span class="argterm">remote-branch</span></dt>
+        <dt>git branch --track <span class="argtermt" title="The name of the new branch">new-branch</span> <span class="argtermt" title="Name of the remote repository">remote</span>/<span class="argtermt" title="Name of the branch on the remote repository">remote-branch</span></dt>
         <dd>
-            Create a new tracking branch named <span class="argterm">new-branch</span>, referencing, and pushing/pulling from, the branch named <span class="argterm">remote-branch</span> on remote repository named <span class="argterm">remote</span>.
+            Create a new tracking branch named <span class="argtermt" title="The name of the new branch">new-branch</span>, referencing, and pushing/pulling from, the branch named <span class="argtermt" title="Name of the branch on the remote repository">remote-branch</span> on remote repository named <span class="argtermt" title="Name of the remote repository">remote</span>.
         </dd>
     </dl>
     <p class="subsectiontitle">Checking Out Branches/Revisions</p>
     <dl class="gitcommandhelp">
-        <dt>git checkout <span class="argterm">branch</span></dt>
+        <dt>git checkout <span class="argtermt" title="Name of the branch to checkout">branch</span></dt>
         <dd>
-            Switch to branch named <span class="argterm">branch</span>. This updates the working tree to reflect the state of the branch named <span class="argterm">branch</span>, and sets HEAD to &quot;<span class="code">.git/refs/heads/<span class="argterm">branch</span></span>&quot;.
+            Switch to branch named <span class="argtermt" title="Name of the branch to checkout">branch</span>. This updates the working tree to reflect the state of the branch named <span class="argtermt" title="Name of the branch to checkout">branch</span>, and sets HEAD to &quot;<span class="code">.git/refs/heads/<span class="argtermt" title="Name of the branch to checkout">branch</span>&quot;.
         </dd>
-        <dt>git checkout <span class="argterm">rev</span></dt>
+        <dt>git checkout <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-            Switch to revision specified by tree-ish <span class="argterm">rev</span>, without explicitly branching. Running &quot;<span class="code">git checkout -b <span class="argterm">new-branch</span></span>&quot; will create a branch from the checked out version.
+            Switch to revision specified by tree-ish <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>, without explicitly branching. Running &quot;<span class="code">git checkout -b <span class="argtermt" title="The name of the new branch">new-branch</span></span>&quot; will create a branch from the checked out version.
         </dd>
     </dl>
     <p class="subsectiontitle">Simultaneous Creating and Switching Branches</p>
     <dl class="gitcommandhelp">
-        <dt>git checkout -b <span class="argterm">new-branch</span></dt>
+        <dt>git checkout -b <span class="argtermt" title="The name of the new branch">new-branch</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span>, referencing the current branch, and check it out.
+            Create a new branch named <span class="argtermt" title="The name of the new branch">new-branch</span>, referencing the current branch, and check it out.
         </dd>
-        <dt>git checkout -b <span class="argterm">new-branch</span> <span class="argterm">rev</span></dt>
+        <dt>git checkout -b <span class="argtermt" title="The name of the new branch">new-branch</span> <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-            Create a new branch named <span class="argterm">new-branch</span> based on the tree-ish <span class="argterm">rev</span>, and check it out (switch to it).
+            Create a new branch named <span class="argtermt" title="The name of the new branch">new-branch</span> based on the tree-ish <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>, and check it out (switch to it).
         </dd>
     </dl>
     <p class="subsectiontitle">Deleting Branches</p>
     <dl class="gitcommandhelp">
-        <dt>git branch -d <span class="argterm">branch</span></dt>
+        <dt>git branch -d <span class="argtermt" title="Name of the branch to delete">branch</span></dt>
         <dd>
-            Delete the local branch named <span class="argterm">branch</span> (fails if <span class="argterm">branch</span> is not reachable from the current branch).
+            Delete the local branch named <span class="argtermt" title="Name of the branch to delete">branch</span> (fails if <span class="argtermt" title="Name of the branch to delete">branch</span> is not reachable from the current branch).
         </dd>
-        <dt>git branch -D <span class="argterm">branch</span></dt>
+        <dt>git branch -D <span class="argtermt" title="Name of the branch to delete">branch</span></dt>
         <dd>
-            Force delete of the local branch named <span class="argterm">branch</span> (works even if <span class="argterm">branch</span> is not reachable from the current branch).
+            Force delete of the local branch named <span class="argtermt" title="Name of the branch to delete">branch</span> (works even if <span class="argtermt" title="Name of the branch to delete">branch</span> is not reachable from the current branch).
         </dd>
 
-        <dt>git branch -d -r <span class="argterm">remote</span>/<span class="argterm">branch</span></dt>
+        <dt>git branch -d -r <span class="argtermt" title="Name of the remote repository">remote</span>/<span class="argtermt" title="Name of the branch on the remote repository">branch</span></dt>
         <dd>
             Delete a &quot;local remote&quot; branch, i.e. a local tracking branch.
         </dd>
 
-        <dt>git push <span class="argterm">remote</span> :heads/<span class="argterm">remote-branch</span></dt>
+        <dt>git push <span class="argtermt" title="Name of the remote repository">remote</span> :heads/<span class="argtermt" title="Name of the branch on the remote repository to delete">branch</span></dt>
         <dd>
-            Delete a branch named <span class="argterm">branch</span> from a remote repository.
+            Delete a branch named <span class="argtermt" title="Name of the branch to delete">branch</span> from a remote repository.
         </dd>
     </dl>
 </div>

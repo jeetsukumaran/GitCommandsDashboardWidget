@@ -29,9 +29,9 @@
         <dd>
            Remove a single stashed state from the stash list. When no <span class="argterm">stash</span> is given, it removes the latest one. i.e. <span class="code">stash@{0}</span>.
         </dd>
-        <dt>git stash branch <span class="argterm">new-branch</span> [<span class="argterm">stash</span>]</dt>
+        <dt>git stash branch <span class="argtermt" title="The name of the new branch">new-branch</span> [<span class="argterm">stash</span>]</dt>
         <dd>
-           Creates and checks out a new branch named <span class="argterm">new-branch</span> starting from the commit
+           Creates and checks out a new branch named <span class="argtermt" title="The name of the new branch">new-branch</span> starting from the commit
            at which the <span class="argterm">stash</span> was originally created, applies the changes recorded in
            <span class="argterm">stash</span> to the new working tree and index, then drops the <span class="argterm">stash</span> if that
            completes successfully. When no <span class="argterm">stash</span> is given, applies the latest one.

@@ -23,28 +23,28 @@
             Show changes (staged and unstaged) in working directory since last commit.
         </dd>
 
-        <dt>git diff <span class="argterm">rev</span> [<span class="argterm">path1 path2 ...</span>]</dt>
+        <dt>git diff <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> [<span class="argtermt" title="A space-separate list of file paths or subdirectories in the working tree">path(s)</span>]</dt>
         <dd>
-            Show differences between working directory and revision specified by tree-ish <span class="argterm">rev</span>, optionally limiting comparison to the file or files found on <span class="code"><span class="argterm">path1</span>, <span class="argterm">path2</span>, ...</span> etc.).
+            Show differences between working directory and revision specified by tree-ish <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (optionally limiting comparison to files found in one or more space-separated file paths or subdirectories given by <span class="argterm">path</span>).
         </dd>
 
-        <dt>git diff <span class="argterm">rev1</span>..<span class="argterm">rev2</span> [<span class="argterm">path1 path2 ...</span>]</dt>
+        <dt>git diff <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span>..<span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span> [<span class="argtermt" title="A space-separate list of file paths or subdirectories in the working tree">path(s)</span>]</dt>
         <dd>
-            Show differences between two revisions specified by tree-ish <span class="argterm">rev1</span> and <span class="argterm">rev2</span>, , optionally limiting comparison to the file or files found on <span class="code"><span class="argterm">path1</span>, <span class="argterm">path2</span>, ...</span> etc.).
+            Show differences between two revisions specified by tree-ish <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span> and <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span> (optionally limiting comparison to files found in one or more space-separated file paths or subdirectories given by <span class="argterm">path</span>).
         </dd>
 
-        <dt>git diff <span class="argterm">rev1</span>...<span class="argterm">rev2</span> [<span class="argterm">path1 path2 ...</span>]</dt>
+        <dt>git diff <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span>...<span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span> [<span class="argtermt" title="A space-separate list of file paths or subdirectories in the working tree">path(s)</span>]</dt>
         <dd>
-            Show differences between the last common ancestor of two versrevisionions specified by tree-ish <span class="argterm">rev1</span> and <span class="argterm">rev2</span>, optionally limiting comparison to the file or files found on <span class="code"><span class="argterm">path1</span>, <span class="argterm">path2</span>, ...</span> etc.).
+            Show differences between the last common ancestor of two revisions specified by tree-ish <span class="argtermt">rev1</span> and <span class="argtermt">rev2</span> (optionally limiting comparison to files found in one or more space-separated file paths or subdirectories given by <span class="argterm">path</span>).
         </dd>
 
     </dl>
 
     <p class="subsectiontitle">File and Directory Contents</p>
     <dl class="gitcommandhelp">
-        <dt>git show <span class="argterm">rev</span>:<span class="argterm">file</span></dt>
+        <dt>git show <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>:<span class="argtermt" title="A path to a file">file</span></dt>
         <dd>
-            Show full contents of <span class="argterm">rev</span> version of <span class="argterm">file</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag.
+            Show full contents of <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> version of <span class="argtermt" title="A path to a file">file</span>, where <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> can be any SHA1 commit ID, branch name, or tag.
         </dd>
         <dt>git ls-files [-t]</dt>
         <dd>
@@ -71,7 +71,7 @@
         <dt>git log -g</dt>
         <dd> Show recent commits, most recent on top, walking the full reflog entries instead of the commit ancestry chain up to the current HEAD. By default, &quot;<span class="code">git log</span>&quot;
         reports all commits only up to the current HEAD, even if HEAD has descendents on the current branch (as, for example,
-        might happen if you ran &quot;<span class="code">git reset <span class="argterm">rev</span></span>&quot; to move HEAD to a previous point in history).
+        might happen if you ran &quot;<span class="code">git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></span>&quot; to move HEAD to a previous point in history).
         The &quot;<span class="code">-g</span>&quot; option will report the full history.
         </dd>
 
@@ -105,19 +105,19 @@
             Show commits that occur before a certain date.
         </dd>
 
-        <dt>git whatchanged <span class="argterm">file</span></dt>
+        <dt>git whatchanged <span class="argtermt" title="A path to a file">file</span></dt>
         <dd>
-            Show only the commits which affected <span class="argterm">file</span> listing the most recent first.
+            Show only the commits which affected <span class="argtermt" title="A path to a file">file</span> listing the most recent first.
         </dd>
 
-        <dt>git blame <span class="argterm">file</span></dt>
+        <dt>git blame <span class="argtermt" title="A path to a file">file</span></dt>
         <dd>
-            Show who authored each line in <span class="argterm">file</span>.
+            Show who authored each line in <span class="argtermt" title="A path to a file">file</span>.
         </dd>
 
-        <dt>git blame <span class="argterm">file</span> <span class="argterm">rev</span></dt>
+        <dt>git blame <span class="argtermt" title="A path to a file">file</span> <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-            Show who authored each line in <span class="argterm">file</span> as of <span class="argterm">rev</span> (allows blame to go back in time).
+            Show who authored each line in <span class="argtermt" title="A path to a file">file</span> as of <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (allows blame to go back in time).
         </dd>
 
         <dt>git rev-list --all</dt>
@@ -125,20 +125,20 @@
             List all commits.
         </dd>
 
-        <dt>git rev-list <span class="argterm">rev1</span>..<span class="argterm">rev2</span></dt>
+        <dt>git rev-list <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span>..<span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span></dt>
         <dd>
-            List all commits between versions <span class="argterm">rev1</span> and <span class="argterm">rev2</span> (which may be specified using a SHA1 commit ID, branch name, or tag).
+            List all commits between versions <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span> and <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span> (which may be specified using a SHA1 commit ID, branch name, or tag).
         </dd>
 
-        <dt>git show <span class="argterm">rev</span></dt>
+        <dt>git show <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-            Show the changeset (diff) of a commit specified by <span class="argterm">rev</span>, which can be any
+            Show the changeset (diff) of a commit specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>, which can be any
             SHA1 commit ID, branch name, or tag.
         </dd>
 
-        <dt>git show <span class="argterm">rev</span> -- <span class="argterm">path</span></dt>
+        <dt>git show <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> -- <span class="argterm">path</span></dt>
         <dd>
-            Show the changeset (diff) of a commit <span class="argterm">rev</span> on file or subdirectory <span class="argterm">path</span>, where <span class="argterm">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the current directory.
+            Show the changeset (diff) of a commit <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> on file or subdirectory <span class="argterm">path</span>, where <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> can be any SHA1 commit ID, branch name, or tag, and <span class="argterm">path</span> is a full path to a file or subdirectory relative to the current directory.
         </dd>
 
     </dl>

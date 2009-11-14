@@ -37,6 +37,14 @@ dl.gitcommandhelp dd {
     margin-left: 2em;
 }
 
+span.argtermt {
+    font-family: AndaleMono, monospace;
+    color: purple;
+    border-bottom: dotted 1px purple;
+    font-weight: normal;
+    font-style: italic;
+}
+
 span.argterm {
     font-family: AndaleMono, monospace;
     color: purple;
