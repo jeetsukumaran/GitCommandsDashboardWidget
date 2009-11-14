@@ -1,30 +1,33 @@
 <div class="section">
-    Reverting is different from resetting in that the changeset is applied to the current working tree (or specific files in the working tree if a &quot;<span class="code">path</span>&quot; argument is given), without modifying the index or changing HEAD. In other words, the reverts are applied as <em>new</em> modifications to the <em>current</em> state of the repository, recording the commit as an extension to the current history. In contrast, resetting generally results in at least a partial return to a previous point in history and &quot;re-starting&quot; from there.
     <p class="sectiontitle">Undo</p>
+
+    Reverting is different from resetting in that the changes of a revert are applied to the <em>current</em> state of the repository, resulting in a <em>new</em> repository state descending from the current one, reflecting the revert. Resetting, on the other hand, represents (a possibly selective) &quot;rewind&quot; to a previous state in the history &quot;starting again&quot; from there. Resets should never be committed if they were applied on commits that have been published or pushed to remote repositories, as this would result in invalid object histories and commit ID's in the remote repositories.
+
     <p class="subsectiontitle">Reverting</p>
     <dl class="gitcommandhelp">
         <dt>git revert <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
-        Reverse commit specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag). This does <em>not</em> do the same thing as similarly named commands in other VCS's such as &quot;<span class="code">svn revert</span>&quot; or &quot;<span class="code">bzr revert</span>&quot;.
+        Revert the changes introduced by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>, and record a new commit that records it. This does <em>not</em> do the same thing as similarly named commands in other VCS's such as &quot;<span class="code">svn revert</span>&quot; or &quot;<span class="code">bzr revert</span>&quot;.
         </dd>
-        <dt>git checkout <span class="argterm">path(s)</span></dt>
+        <dt>git checkout <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
         <dd>
-        Re-checkout file or files specified by <span class="argterm">path(s)</span>, overwriting any local changes. This is most similar to &quot;<span class="code">svn revert</span>&quot;.
+        Re-checkout file or files specified by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span>, overwriting any local changes. This is most similar to &quot;<span class="code">svn revert</span>&quot;.
         </dd>
-        <dt>git checkout <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> <span class="argterm">path(s)</span></dt>
+        <dt>git checkout <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
         <dd>
-        Re-checkout file or files specified by <span class="argterm">path(s)</span> to version specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), overwriting any local changes.
+        Re-checkout file or files specified by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span> to version specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), overwriting any local changes.
         </dd>
     </dl>
+
     <p class="subsectiontitle">Resetting</p>
     <dl class="gitcommandhelp">
         <dt>git reset</dt>
         <dd>
            Resets the index (i.e., removes all changes staged for commit) but does not modify the working tree (i.e., the changes in the files are preserved), and does not change HEAD.
         </dd>
-        <dt>git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> -- <span class="argterm">path</span></dt>
+        <dt>git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> --  <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
         <dd>
-           Restores file or files specified by <span class="argterm">path</span> to
+           Restores file or files specified by  <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span> to
            version specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), without changing HEAD.
         </dd>
         <dt>git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
