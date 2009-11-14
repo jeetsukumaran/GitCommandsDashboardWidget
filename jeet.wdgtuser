@@ -18,8 +18,8 @@
 		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1242, 260}}</string>
-			<string>{{0, 270}, {1242, 582}}</string>
+			<string>{{0, 0}, {1242, 170}}</string>
+			<string>{{0, 180}, {1242, 672}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -27,11 +27,11 @@
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
-		<string>b439869c1aafb041</string>
+		<string>f8517d0c36afb041</string>
 		<key>in-layer</key>
 		<true/>
 		<key>path</key>
-		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtproj4syY6k/GitCommands.wdgtproj/project.wdgt/</string>
+		<string>/private/var/folders/Qy/QyqLTwCLHuWme-XcWzJ-kk+++TI/-Tmp-/Dashcode/.GitCommands.wdgtprojmsSXki/GitCommands.wdgtproj/project.wdgt/</string>
 		<key>percent-offset-x</key>
 		<integer>0</integer>
 		<key>percent-offset-y</key>
@@ -129,7 +129,13 @@
 		</array>
 	</array>
 	<key>Objects view last selections</key>
-	<array/>
+	<array>
+		<array>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+		</array>
+	</array>
 	<key>Opened Steps</key>
 	<array>
 		<integer>0</integer>

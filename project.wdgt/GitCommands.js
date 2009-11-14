@@ -131,7 +131,8 @@ function displayAllSections() {
     displayHTML = displayHTML + readUrl("merging.html");
     displayHTML = displayHTML + readUrl("conflicts.html");       
     displayHTML = displayHTML + readUrl("undo.html");
-    displayHTML = displayHTML + readUrl("stashing.html");                        
+    displayHTML = displayHTML + readUrl("stashing.html"); 
+    displayHTML = displayHTML + readUrl("remotes.html");                             
     displayHTML = displayHTML + readUrl("configuration.html");
     displayHTML = displayHTML + readUrl("environment.html");    
     document.getElementById('maincontent').innerHTML = displayHTML;
@@ -173,6 +174,8 @@ function displayContent(event)
             contentFile = "plumbing.html";
         } else if (selectedItem == "Stashing") {
             contentFile = "stashing.html";   
+        } else if (selectedItem == "Remotes") {
+            contentFile = "remotes.html";   
         } else if (selectedItem == "EnvironmentVariables") {
             contentFile = "environment.html";                                                                         
         }
