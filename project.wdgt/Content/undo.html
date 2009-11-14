@@ -1,7 +1,11 @@
 <div class="section">
     <p class="sectiontitle">Undo</p>
 
-    Reverting is different from resetting in that the changes of a revert are applied to the <em>current</em> state of the repository, resulting in a <em>new</em> repository state descending from the current one, reflecting the revert. Resetting, on the other hand, represents (a possibly selective) &quot;rewind&quot; to a previous state in the history &quot;starting again&quot; from there. Resets should never be committed if they were applied on commits that have been published or pushed to remote repositories, as this would result in invalid object histories and commit ID's in the remote repositories.
+    Reverting is different from resetting in that reverts usually create new history while resets usually remove existing history.
+    The changes of a revert are applied to the <em>current</em> state of the repository, and, if committed, results in a <em>new</em> repository state descending from the current one.
+    Reverts are safe to publish even if they revert a previously published commit, and, in fact, are the correct way of dealing with the undoing of published commits.
+    Resetting, on the other hand, represents (a possibly selective) &quot;rewind&quot; to a previous state in the history &quot;starting again&quot; from there.
+    Resets should never be committed if they undo commits that have been published or pushed to remote repositories, as this would result in invalid object histories and commit ID's in the remote repositories.
 
     <p class="subsectiontitle">Reverting</p>
     <dl class="gitcommandhelp">
@@ -13,9 +17,17 @@
         <dd>
         Re-checkout file or files specified by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span>, overwriting any local changes. This is most similar to &quot;<span class="code">svn revert</span>&quot;.
         </dd>
+        <dt>git checkout -- <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
+        <dd>
+        As above, but use this syntax if you have a branch or tag with the same name as a path given in <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span>.
+        </dd>
         <dt>git checkout <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
         <dd>
         Re-checkout file or files specified by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span> to version specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), overwriting any local changes.
+        <dt>git checkout -f</dt>
+        <dd>
+        Throw away <strong>all</strong> local changes since last commit, restoring working tree to last committed state (plus untracked files) and clearing index. Unlike &quot;<code>git reset --hard</code>&quot;, does not move HEAD, and so will not, for example, cleanly forget about a failed merged: use &quot;<code>git reset --hard</code>&quot; for this.
+        </dd>
         </dd>
     </dl>
 
@@ -28,7 +40,7 @@
         <dt>git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> --  <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span></dt>
         <dd>
            Restores file or files specified by  <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span> to
-           version specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), without changing HEAD.
+           revision specified by <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span>, without changing HEAD.
         </dd>
         <dt>git reset <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
@@ -38,16 +50,16 @@
         <dt>git reset --soft <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
            Sets the current HEAD to the commit specified by <span
-           class="argterm">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), and does not modify the working tree, but keeps changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<span class="code">git reset --soft HEAD^</span>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
+           class="argterm">rev</span>, and does not modify the working tree, but keeps changes in the index for editing. For example, if something was forgotten or omitted in the previous commit, &quot;<span class="code">git reset --soft HEAD^</span>&quot; will undo the last commit, and keep all changes in the index for editing and the next commit.
         </dd>
         <dt>git reset --hard</dt>
         <dd>
-        Abandon <strong>all</strong> changes since last commit, restoring working tree to its last committed state (plus untracked files).
+        Throw away <strong>all</strong> local changes since last commit, restoring working tree to last committed state (plus untracked files) and resetting both index and HEAD.
         </dd>
         <dt>git reset --hard <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span></dt>
         <dd>
          Sets the current HEAD to the commit specified by <span
-           class="argterm">rev</span> (which may be specified using a SHA1 commit ID, branch name, or tag), and changes the working tree to mirror the new HEAD (plus untracked files). For example, &quot;<span class="code">git reset --hard ORIG_HEAD</span>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<span class="code">git reset --hard</span>&quot; instead.
+           class="argterm">rev</span>, and changes the working tree to mirror the new HEAD (plus untracked files). For example, &quot;<span class="code">git reset --hard ORIG_HEAD</span>&quot; will undo the most recent <em>successful</em> merge <em>and</em> any changes that occurred after. Useful for forgetting about the merge just done.  If there are conflicts (the merge was not successful), use &quot;<span class="code">git reset --hard</span>&quot; instead.
         </dd>
     </dl>
 </div>
