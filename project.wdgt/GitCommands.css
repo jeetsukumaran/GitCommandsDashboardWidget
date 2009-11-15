@@ -134,20 +134,19 @@ body {
     left: 22px;
 }
 
-#img {
-    position: absolute;
-    top: 50px;
-    left: 22px;
-    width: 73px;
-    height: 141px;
-}
-
 #codatext {
     position: absolute;
     top: 50px;
-    left: 99px;
     height: 141px;
-    width: 282px;
-
     text-overflow: ellipsis;
+    width: 260px;
+    left: 121px;
+}
+
+#img {
+    position: absolute;
+    width: 73px;
+    height: 141px;
+    top: 50px;
+    left: 33px;
 }
