@@ -52,3 +52,46 @@ span.argterm {
     font-style: italic;
 }
 
+pre {
+    font-family: AndaleMono, monospace;
+    color: darkblue;
+    padding: 4px;
+}
+
+div.coda {
+    width: 300;
+    font-family: Helvetica, Arial, sans;
+    font-size: 11px;
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+div.coda p {
+    wrap: normal;
+}
+
+div.coda .codatitle {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+div.coda .codasubtitle {
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
+div.coda .codaauthor {
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
+
+div.coda a {
+    color: orange;
+}

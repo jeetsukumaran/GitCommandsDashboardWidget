@@ -51,10 +51,11 @@ body {
 
 #backDevelopedWith {
     position: absolute;
-    top: 67px;
-    left: 43px;
-    right: 43px;
+    top: 377px;
+    right: 21px;
     margin-left: auto;
+    width: 150px;
+    left: 231px;
     margin-right: auto;
 }
 
@@ -131,4 +132,22 @@ body {
     color: rgb(255, 255, 255);
     top: 19px;
     left: 22px;
+}
+
+#img {
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    width: 73px;
+    height: 141px;
+}
+
+#codatext {
+    position: absolute;
+    top: 50px;
+    left: 99px;
+    height: 141px;
+    width: 282px;
+
+    text-overflow: ellipsis;
 }

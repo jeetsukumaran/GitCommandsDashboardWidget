@@ -70,7 +70,7 @@ function showBack(event)
 
     front.style.display = "none";
     back.style.display = "block";
-
+    populateCoda();
     if (window.widget) {
         setTimeout('widget.performTransition();', 0);
     }
@@ -117,6 +117,12 @@ function readUrl(filename)
     //req.responseText returns a string
     response = req.responseText; 
     return response;
+}
+
+function populateCoda() {
+    var coda_element = document.getElementById("codatext");
+    var coda_content = readUrl("coda.html");
+    coda_element.innerHTML = coda_content;
 }
 
 function displayAllSections() {
