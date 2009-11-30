@@ -36,7 +36,7 @@ function hide()
 //
 function show()
 {
-    displayAllSections();
+    displayContent();
 }
 
 //
