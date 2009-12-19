@@ -1,0 +1,49 @@
+<div class="section">
+    <p class="sectiontitle">Searching</p>
+
+    <p class="subsectiontitle">Searching for Content</p>
+    <dl class="gitcommandhelp">
+        <dt>git grep <span class="argtermt" title="Regular expression pattern">regexp</span></dt>
+        <dd>
+            Search working tree for text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp</span>.
+        </dd>
+        <dt>git grep -e <span class="argtermt" title="Regular expression pattern">regexp1</span> [--or] -e <span class="argtermt" title="Regular expression pattern">regexp2</span></dt>
+        <dd>
+            Search working tree for lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp1</span> <strong>or</strong> <span class="argtermt" title="Regular expression pattern">regexp2</span>.
+        </dd>
+        <dt>git grep -e <span class="argtermt" title="Regular expression pattern">regexp1</span> --and -e <span class="argtermt" title="Regular expression pattern">regexp2</span></dt>
+        <dd>
+            Search working tree for lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp1</span> <strong>and</strong> <span class="argtermt" title="Regular expression pattern">regexp2</span>, reporting file paths only.
+        </dd>
+        <dt>git grep -l --all-match -e <span class="argtermt" title="Regular expression pattern">regexp1</span> -e <span class="argtermt" title="Regular expression pattern">regexp2</span></dt>
+        <dd>
+            Search working tree for files that have lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp1</span> <strong>and</strong> lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp2</span>.
+        </dd>
+        <dt>git grep <span class="argtermt" title="Regular expression pattern">regexp</span> $(git rev-list --all)</dt>
+        <dd>
+            Search all revisions for text matching  regular expression <span class="argtermt" title="Regular expression pattern">regexp</span>.
+        </dd>
+        <dt>git grep <span class="argtermt" title="Regular expression pattern">regexp</span> $(git rev-list <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span>..<span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span>)</dt>
+        <dd>
+            Search all revisions between <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev1</span> and <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev2</span> for text matching  regular expression <span class="argtermt" title="Regular expression pattern">regexp</span>.
+        </dd>
+    </dl>
+
+    <p class="subsectiontitle">Searching Logs and Commit History</p>
+
+    <dl class="gitcommandhelp">
+        <dt>git log --grep <span class="argtermt" title="Regular expression pattern">regexp</span></dt>
+        <dd>
+            Search commit logs for lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp</span>.
+        </dd>
+        <dt>git log --grep <span class="argtermt" title="Regular expression pattern">regexp1</span> --grep <span class="argtermt" title="Regular expression pattern">regexp2</span></dt>
+        <dd>
+            Search commit logs for lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp1</span> <strong>or</strong> <span class="argtermt" title="Regular expression pattern">regexp2</span>.
+        </dd>
+        <dt>git log --grep <span class="argtermt" title="Regular expression pattern">regexp1</span> --and --grep <span class="argtermt" title="Regular expression pattern">regexp2</span></dt>
+        <dd>
+            Search commit logs for lines of text matching regular expression <span class="argtermt" title="Regular expression pattern">regexp1</span> <strong>and</strong> <span class="argtermt" title="Regular expression pattern">regexp2</span>.
+        </dd>
+    </dl>
+
+</div>
