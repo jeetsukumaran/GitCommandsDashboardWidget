@@ -10,20 +10,16 @@
 		<integer>8</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1435, 539}}</string>
-			<string>{{0, 549}, {1435, 329}}</string>
+			<string>{{0, 0}, {1435, 402}}</string>
+			<string>{{0, 412}, {1435, 466}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>2</integer>
+	<integer>0</integer>
 	<key>Dashboard Widget Prefs</key>
 	<dict>
 		<key>id</key>
@@ -49,16 +45,25 @@
 		<key>rosetta</key>
 		<false/>
 	</dict>
+	<key>DeploymentOptions</key>
+	<dict>
+		<key>Destination</key>
+		<string>localhost.default</string>
+		<key>EmailToNotifyAddress</key>
+		<string>jeetsukumaran@gmail.com</string>
+		<key>SavePath</key>
+		<string>/Users/jeet/Documents/Projects/Utilities/DashboardWidgets/GitCommands/Deployment</string>
+		<key>enableSimulation</key>
+		<true/>
+		<key>simulatedHost</key>
+		<string>glyphoglossus-2.local</string>
+	</dict>
 	<key>Design time language</key>
 	<string>en.lproj</string>
 	<key>MainSplitViewGeometry</key>
 	<dict>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
 			<string>{{0, 0}, {244, 899}}</string>
@@ -73,16 +78,12 @@
 		<integer>5</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
-		<key>_collapsingFrameDimension</key>
-		<real>0.0</real>
 		<key>_indexOfCollapsedView</key>
 		<integer>0</integer>
-		<key>_percentageOfCollapsedView</key>
-		<real>0.0</real>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {246, 488}}</string>
-			<string>{{0, 498}, {246, 380}}</string>
+			<string>{{0, 0}, {246, 353}}</string>
+			<string>{{0, 363}, {246, 515}}</string>
 		</array>
 	</dict>
 	<key>Objects view expanded items</key>
@@ -142,5 +143,15 @@
 	<array>
 		<integer>0</integer>
 	</array>
+	<key>Widget</key>
+	<dict>
+		<key>Objects view last selections</key>
+		<array/>
+		<key>Visible StackLayout Views</key>
+		<array>
+			<string>front</string>
+			<string>body</string>
+		</array>
+	</dict>
 </dict>
 </plist>
