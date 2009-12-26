@@ -20,7 +20,7 @@ p.subsectiontitle {
 
 span.code, dl.gitcommandhelp dt {
     font-family: AndaleMono, monospace;
-    color: #005588;
+    color: Navy;
     padding: 4px;
 }
 
@@ -54,7 +54,7 @@ span.argterm {
 
 pre {
     font-family: AndaleMono, monospace;
-    color: #005588;
+    color: Navy;
     padding: 4px;
 }
 
