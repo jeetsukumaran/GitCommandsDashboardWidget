@@ -37,6 +37,11 @@
         <dd>
             Show differences between the last common ancestor of two revisions, <span class="argtermt">rev1</span> and <span class="argtermt">rev2</span>, optionally limiting comparison to files found in one or more space-separated file paths or subdirectories given by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span>.
         </dd>
+        
+        <dt>git fetch <span class="argtermt" title="Name of the remote repository">remote</span>; git diff ..<span class="argtermt" title="Name of the remote repository">remote</span> </dt>
+        <dd>
+            Update changes in remote branch <span class="argtermt" title="Name of the remote repository">remote</span> (defaults to &quot;<code>origin</code>&quot), and show differences from current HEAD.
+        </dd>
 
     </dl>
 
@@ -139,6 +144,16 @@
         <dd>
             Show the changeset (diff) of a commit <span class="argtermt" title="A SHA-1 commit ID, branch name or tag">rev</span> , optionally limited to files found in one or more space-separated file paths or subdirectories given by <span class="argtermt" title="A space-separated list of file paths or subdirectories">path(s)</span>.
         </dd>
+        
+        <dt>git for-each-ref</dt>
+        <dd>
+            List all commits pointed to by tags and branch HEAD's.
+        </dd>
+        
+        <dt>git fetch <span class="argtermt" title="Name of the remote repository">remote</span>; git log ..<span class="argtermt" title="Name of the remote repository">remote</span> </dt>
+        <dd>
+            Update changes in remote branch <span class="argtermt" title="Name of the remote repository">remote</span> (defaults to &quot;<code>origin</code>&quot), and show new commits in not in current HEAD.
+        </dd>        
 
     </dl>
 </div>
